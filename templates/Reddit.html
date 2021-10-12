@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Reddit Post</title>
+	<style>
+			form {
+				width: 40%;
+			}
+			 
+			legend {
+				width: auto;
+				padding: 2px;
+				margin-left: calc(40% - 25px - 8px);
+			}
+			
+			.aside{
+			  float: right;
+			  max-width: 100%;
+			  width: 500px;
+			}
+		</style>	
+</head>
+<body>
+	<form action="/redditPost" method="POST">
+		<fieldset>
+            <legend><b><h2>Post to the Reddit</h2></b></legend>
+
+            <b>Title:</b>
+			<input type="text" name="redditTitle" id="redditTitle" placeholder="Enter a title"><br><br>
+			<b>Description:</b>
+			<input type="text" name="redditDes" id="redditDes" placeholder="Enter a description"><br><br>
+			<input type="submit" value="Post to Reddit!" id="submitReddit">
+			
+        </fieldset>
+	</form>
+</body>
+</html>

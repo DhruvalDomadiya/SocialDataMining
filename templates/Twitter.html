@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Twitter Post</title>	
+	<style>
+        form {
+            width: 30%;
+        }
+         
+        legend {
+            width: auto;
+            padding: 2px;
+            margin-left: calc(40% - 25px - 8px);
+        }
+		
+		.aside{
+		  float: right;
+		  max-width: 100%;
+		  width: 500px;
+		}
+		
+    </style>
+</head>
+<body>
+	
+    <form action="/twitterPost" method="POST">
+		<fieldset>
+            <legend><b><h2>Post to Twitter</h2></b></legend>
+
+            <input type="text" name="twitterText" id="twitter" placeholder="Post a new Tweet">
+			<input type="submit" value="Tweet!" id="submitTweet">
+           
+        </fieldset>
+	</form>		
+			
+</body>
+</html>
